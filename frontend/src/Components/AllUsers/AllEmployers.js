@@ -1,4 +1,3 @@
-import { Card } from "@mui/material";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAllEmployer } from "../../Redux/Slices/User";

@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-const HOST = "http://localhost:7070";
+const HOST = "https://job-portal-55ex.onrender.com";
 //====================CREATE JOB==========================//
 export const FetchCreateJob = createAsyncThunk(
   "data/CreateJob",
@@ -641,7 +641,7 @@ const JobSlice = createSlice({
       .addCase(fetchSkilledJobs.rejected, (state, action) => {
         state.loading = false;
         state.error = action.error.message;
-      })
+      });
   },
 });
 

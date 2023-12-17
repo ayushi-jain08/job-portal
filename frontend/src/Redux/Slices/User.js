@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-const HOST = "http://localhost:7070";
+const HOST = "https://job-portal-55ex.onrender.com";
 //====================REGISTER USER=======================//
 export const fetchRegister = createAsyncThunk(
   "data/fetchRegister",

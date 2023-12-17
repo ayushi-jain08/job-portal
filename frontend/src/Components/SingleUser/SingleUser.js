@@ -30,7 +30,6 @@ const SingleUser = () => {
     // eslint-disable-next-line
   }, [dispatch, userId, SingleUserDetails._id]);
 
-  console.log("oo", ClickedEmployerJob);
   return (
     <div className="single-user">
       <div className="single-user-container">

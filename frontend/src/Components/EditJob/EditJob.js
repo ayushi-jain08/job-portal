@@ -29,12 +29,9 @@ const EditJob = () => {
     experience,
     location,
     salary,
-    createdAt,
-    applications,
     desc,
     type,
     requirements,
-    postedBy,
     category,
   } = singleJobDetail;
   const [types, setTypes] = useState("");
@@ -64,15 +61,16 @@ const EditJob = () => {
       });
       setTypes(type || "");
     }
+    // eslint-disable-next-line
   }, [singleJobDetail]);
   useEffect(() => {
     dispatch(fetchAllJobCategory());
   }, [dispatch]);
-  console.log("kkk", jobData);
+
   useEffect(() => {
     dispatch(FetchSingleJobDetails(jobId));
   }, [dispatch, jobId]);
-  console.log(";sss", singleJobDetail);
+
   const handleJobDataChange = (e) => {
     let name = e.target.name;
     let value = e.target.value;

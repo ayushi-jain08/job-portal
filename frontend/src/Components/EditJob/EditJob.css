@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Pacifico&family=Playfair+Display:wght@500&display=swap");
+
+/* font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'PT Serif', serif; */
+.create-job {
+  max-width: 1000px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 80px;
+  gap: 15px;
+}
+.create-job .create-job-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0px auto;
+  background-color: white;
+  /* border: 2px solid rgb(189, 188, 188); */
+  border-radius: 10px;
+  padding: 15px;
+}
+.create-job-container .create-job-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.create-job-container .create-job-content .img h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+}
+.create-job-container .create-job-content img {
+  width: 350px;
+  height: 400px;
+  object-fit: contain;
+}
+.create-job-container .create-job-content .create-job-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.create-job-container .create-job-content .form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  border: none;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0 7px;
+  border-radius: 5px;
+  width: 400px;
+
+  background-color: rgb(235, 235, 235);
+}
+.create-job-container .create-job-content .form-group input {
+  width: 98%;
+  border: none;
+  outline: none;
+  background-color: rgb(235, 235, 235);
+  padding: 5px 7px;
+  color: black;
+  height: 100%;
+}
+.create-job-container .create-job-content .form-group svg {
+  color: rgb(3, 3, 49);
+}
+.create-job-container .create-job-content .form-group input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(123, 121, 121);
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+}
+.create-job-container .create-job-content .form-group select {
+  font-family: "PT Serif", serif;
+  font-size: 16px;
+  padding: 0 10px;
+  font-family: "Playfair Display", serif;
+  width: 50%;
+  margin-left: 3px;
+}
+.create-job-container .create-job-content .form-group label {
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+.create-job-container .create-job-content .label-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "PT Serif", serif;
+  font-size: 12px;
+  color: rgb(97, 97, 97);
+  background-color: rgb(235, 235, 235);
+  padding: 7px 3px;
+  border-radius: 5px;
+}
+.create-job-container .create-job-content .textarea-group {
+  width: 100%;
+  background-color: rgb(235, 235, 235);
+  height: 100px;
+  border-radius: 5px;
+}
+.create-job-container .create-job-content .textarea-group textarea {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 5px 8px;
+  resize: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+  background-color: rgb(235, 235, 235);
+}
+.create-job-container .create-job-content .label-group .radio-label {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-family: "PT Serif", serif;
+}
+.create-job .submit-btn {
+  background-color: green;
+  padding: 7px;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: "PT Serif", serif;
+  font-size: 22px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.create-job .submit-btn:active {
+  background-color: rgb(1, 98, 1);
+  transform: scale(0.964);
+}

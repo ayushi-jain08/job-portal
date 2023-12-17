@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Pacifico&family=Playfair+Display:wght@500&display=swap");
+
+/* font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'PT Serif', serif; */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  background-color: transparent !important;
+  transition: bg 0.1s ease-in-out;
+  z-index: 99;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.scrolled {
+  background-color: black !important;
+}
+.navbar a {
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+.active {
+  background-color: rgba(153, 153, 153, 0.4) !important;
+}
+.login-my-account a {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.login-my-account a svg {
+  color: white;
+  font-size: 35px;
+}
+.login-my-account a span {
+  text-transform: uppercase;
+  font-family: "PT Serif", serif;
+  font-size: 18px;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    padding: 0;
+  }
+  .login-my-account a svg {
+    font-size: 30px;
+  }
+  .login-my-account a span {
+    font-size: 15px;
+  }
+}
+
+@keyframes rotateColors {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}

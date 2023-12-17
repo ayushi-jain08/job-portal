@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Pacifico&family=Playfair+Display:wght@500&display=swap");
+
+/* font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'PT Serif', serif; */
+.user-profile-container {
+  position: relative;
+  top: 65px;
+  background-image: url("../../Images//gear.png");
+  background-repeat: no-repeat;
+
+  background-position: right top;
+  width: 100%;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+.user-profile-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 10px 15px;
+}
+
+.user-profile-page .user-display-info .create-btn {
+  border: none;
+  outline: none;
+  background-color: rgb(5, 5, 37);
+  color: white;
+  font-family: "PT Serif", serif;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+}
+.user-profile-page .user-display-info .create-btn:active {
+  background-color: rgb(104, 104, 104);
+  transform: scale(1.1);
+}
+.user-profile-page .user-all-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 20px;
+}
+.user-profile-page .user-top-info {
+  display: flex;
+  justify-content: space-between;
+}
+.user-profile-page .user-top-info .user-image {
+  position: relative;
+}
+.user-profile-page .user-top-info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.user-profile-page .user-display-info .user-image svg {
+  position: absolute;
+  top: 63%;
+  left: 20%;
+  font-size: 28px;
+  color: green;
+}
+.user-profile-page .user-top-info h3 {
+  font-family: "Playfair Display", serif;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 20px;
+}
+.user-profile-page .user-top-info span {
+  font-size: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.user-profile-page .swipe-userType .jobseeker_employer_toggle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-profile-page .swipe-userType .loader {
+  position: relative;
+  margin-top: 50px;
+  left: 50%;
+}
+.user-profile-page .swipe-userType .job-list-container {
+  margin-top: 20px;
+}
+.user-profile-page .swipe-userType .jobseeker_employer_toggle p {
+  color: rgba(0, 0, 0, 0.678);
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 5px;
+  border-bottom: 2px solid transparent;
+  width: 15%;
+  font-family: "Playfair Display", serif;
+  border-radius: 3px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.user-profile-page .swipe-userType .jobseeker_employer_toggle .active-tab {
+  border-bottom-color: darkblue; /* Set the color you want for the active tab */
+}
+
+.user-profile-page .user-display-info .about-user,
+.add-education,
+.add-experience,
+.add-skills {
+  margin-top: 12px;
+  background-color: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 5px 15px;
+}
+/* ======================EXPERIENCE CARD CSS========================== */
+.user-profile-page .user-display-info .user-display-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-profile-page .user-display-info .user-experience-card,
+.user-education-card {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 14px;
+}
+.user-profile-page .user-display-info .user-experience-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgb(201, 201, 201);
+}
+.user-profile-page .user-display-info .user-experience-card div,
+.user-profile-page .user-display-info .user-education-card div {
+  display: flex;
+  flex-direction: column;
+}
+.user-profile-page .user-display-info .user-experience-card h3 {
+  font-size: 19px;
+  font-weight: 600;
+  font-family: "PT Serif", serif;
+  text-transform: capitalize;
+}
+.user-education-card h3 {
+  font-size: 17px;
+  font-family: "PT Serif", serif;
+  text-transform: capitalize;
+}
+.user-profile-page .user-display-info .user-education-card p {
+  font-size: 15px;
+  font-family: "PT Serif", serif;
+  color: rgb(57, 57, 57);
+  text-transform: capitalize;
+}
+.user-profile-page .user-display-info .user-experience-card p {
+  font-size: 15px;
+  font-family: "PT Serif", serif;
+  text-transform: capitalize;
+  color: rgb(57, 57, 57);
+}
+.user-profile-page .user-display-info .user-experience-card span,
+.user-profile-page .user-display-info .user-education-card span {
+  font-size: 15px;
+  text-transform: capitalize;
+  font-family: "PT Serif", serif;
+  color: rgb(91, 90, 90);
+}
+.user-profile-page .user-display-info .about-user p,
+.add-education p,
+.add-experience p,
+.add-skills p {
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+}
+.user-profile-page .user-display-info .about-user button,
+.add-education button,
+.add-experience button,
+.add-skills button {
+  border: none;
+  outline: none;
+  color: rgb(81, 81, 248);
+  font-size: 18px;
+  font-family: "PT Serif", serif;
+  background-color: transparent;
+  padding: 8px 0;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.user-profile-page .user-display-info .user-skill-card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.user-profile-page .user-display-info .user-skill-card p {
+  font-size: 15px;
+  font-family: "PT Serif", serif;
+  color: rgb(91, 90, 90);
+  text-transform: capitalize;
+}
+.user-profile-page .user-top-info .about-user button:active,
+.add-education button:active,
+.add-experience button:active,
+.add-skills button:active {
+  transform: scale(1.1);
+  color: brown;
+}
+.DialogBox {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=e3f9cf&c2=fae2c9&gt=l&gd=dtl
+*/
+
+  width: 100%;
+  border-radius: 15px;
+  padding-bottom: 15px;
+}
+.fullScreenDialog {
+  width: 40% !important;
+  max-width: 40%;
+}
+.DialogBox .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(213, 213, 213);
+  padding: 10px 7px;
+}
+.DialogBox .top h2 {
+  font-size: 22px;
+  font-family: "Playfair Display", serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.DialogBox .top h2 svg {
+  font-size: 25px;
+  color: rgb(78, 78, 78);
+}
+.DialogBox .top button {
+  border: none;
+  font-family: "PT Serif", serif;
+  background-color: transparent;
+  color: gray;
+  font-size: 20px;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+.DialogBox .top button:active {
+  background-color: rgb(223, 223, 223);
+}
+/* =============ABOUT USER CSS================ */
+.DialogBox textarea {
+  resize: none;
+  display: block;
+  width: 100%;
+  max-width: 95%;
+  margin: 15px auto;
+  min-height: 130px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  padding: 5px 8px;
+  border: 1.3px solid rgb(170, 170, 170);
+}
+/* ==================ADD EXPERIENCE CSS======================== */
+.DialogBox .form-group {
+  max-width: 90%;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.DialogBox .form-group .checkbox {
+  width: fit-content;
+}
+.DialogBox .form-group > div .time-period p {
+  font-size: 15px;
+  color: gray;
+  font-family: "Playfair Display", serif;
+}
+.DialogBox .form-group > div .time-period span {
+  font-family: "PT Serif", serif;
+  font-size: 15px;
+}
+.DialogBox .form-group .from p,
+.DialogBox .form-group .to p {
+  font-size: 15px;
+  color: gray;
+  font-family: "PT Serif", serif;
+  padding: 5px;
+}
+.DialogBox .form-group .from > div,
+.DialogBox .form-group .to > div,
+.DialogBox .form-group .year {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.DialogBox .form-group .year > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.DialogBox .form-group .year > div p {
+  font-family: "PT Serif", serif;
+  padding: 5px;
+  color: gray;
+  text-transform: capitalize;
+  font-size: 17px;
+}
+.DialogBox .form-group .from select,
+.DialogBox .form-group .to select,
+.DialogBox .form-group .year select {
+  width: 100%;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(188, 184, 184);
+  font-family: "PT Serif", serif;
+  font-size: 18px;
+  color: rgb(89, 88, 88);
+}
+.DialogBox .form-group .from select option,
+.DialogBox .form-group .to select option,
+.DialogBox .form-group .year option {
+  color: rgb(69, 68, 68);
+  font-family: "PT Serif", serif;
+}
+@media screen and (max-width: 1200px) {
+  .user-profile-page {
+    max-width: 99%;
+    padding: 10px 0;
+  }
+  .user-profile-container {
+    background: none;
+    top: 45px;
+  }
+  .user-profile-page .swipe-userType .jobseeker_employer_toggle p {
+    width: 50%;
+  }
+  .user-profile-page .user-display-info .create-btn {
+    padding: 10px;
+    font-size: 15px;
+  }
+  .user-profile-page .user-display-info .about-user,
+  .add-education,
+  .add-experience,
+  .add-skills {
+    padding: 5px;
+  }
+  .user-profile-page .user-display-info .user-experience-card img {
+    width: 50px;
+    height: 50px;
+  }
+  .user-profile-page .user-display-info .user-experience-card h3 {
+    font-size: 18px;
+  }
+  .user-education-card h3 {
+    font-size: 15px;
+  }
+  .user-profile-page .user-display-info .user-education-card p {
+    font-size: 14px;
+  }
+  .user-profile-page .user-display-info .user-experience-card p {
+    font-size: 14px;
+  }
+  .user-profile-page .user-display-info .user-experience-card span,
+  .user-profile-page .user-display-info .user-education-card span {
+    font-size: 14px;
+  }
+  .user-profile-page .user-display-info .about-user button,
+  .add-education button,
+  .add-experience button,
+  .add-skills button {
+    font-size: 16px;
+  }
+  .user-profile-page .user-display-info .user-skill-card p {
+    font-size: 14px;
+  }
+  .fullScreenDialog {
+    width: 100% !important;
+  }
+  .DialogBox {
+    max-width: 99%;
+    margin: 0 auto;
+    min-width: 100%;
+  }
+  .DialogBox .top h2 {
+    font-size: 18px;
+  }
+}

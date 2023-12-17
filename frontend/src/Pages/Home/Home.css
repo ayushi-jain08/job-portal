@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Pacifico&family=Playfair+Display:wght@500&display=swap");
+
+/* font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'PT Serif', serif; */
+
+.home {
+  background: linear-gradient(rgba(30, 27, 27, 0.6), rgba(24, 23, 23, 0.5)),
+    url("../../Images/bg.jpg");
+  background-position: top;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 70vh;
+  overflow: hidden;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .content {
+  color: white;
+  z-index: 99;
+  text-align: center;
+}
+.home .content span {
+  font-size: 25px;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  user-select: none;
+}
+
+.home .content .form-group {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: 60px;
+  transition: all 0.5s ease-in-out;
+  /* border: 2px solid red; */
+  height: 60px;
+  overflow: hidden;
+  margin-top: 25px;
+  position: relative;
+  animation: rotateForm 3s ease-in-out forwards;
+}
+.home .content .form-group .search-icon {
+  position: absolute;
+  color: green;
+  left: 7px;
+  box-sizing: border-box;
+  /* height: 100%;
+  padding: 10px 0; */
+  /* border: 2px solid black; */
+  line-height: 10px;
+}
+.home .content .form-group .search-icon svg {
+  font-size: 28px;
+}
+.home .content .form-group input {
+  width: 80%;
+  height: 100%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 10px 5px;
+  padding-left: 39px;
+  font-family: "PT Serif", serif;
+  font-size: 15px;
+}
+.home .content .form-group input::placeholder {
+  font-size: 17px;
+  font-weight: 300;
+  color: rgb(130, 129, 129);
+  letter-spacing: 1px;
+  font-family: "Pacifico", cursive;
+}
+.home .content .form-group .search-submit {
+  width: 20%;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 23px;
+  font-family: "PT Serif", serif;
+  background-color: green;
+  color: white;
+  border: none;
+  outline: none;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+.home .content .form-group .search-submit:active {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+.home .content p {
+  font-family: "Playfair Display", serif;
+  font-size: 65px;
+  font-weight: 800;
+  margin-top: -10px;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(45deg, #6f6fff, #70e3f5, #fff, rgb(244, 23, 252));
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  mix-blend-mode: overlay;
+  animation: rotateColors 15s linear infinite, hueRotate 15s linear infinite;
+  user-select: none;
+}
+
+.bubble {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: white;
+  bottom: -30px;
+  opacity: 0.2;
+  animation: bubble 15s ease-in-out infinite,
+    sideWays 4s ease-in-out infinite alternate;
+}
+.home-category {
+  background-image: url("../../Images/blob2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0%);
+    opacity: 0.06;
+  }
+  100% {
+    transform: translateY(-120vh);
+  }
+}
+
+@keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 200px;
+  }
+}
+
+.bubble--1 {
+  left: 10%;
+  animation-delay: 0.5s;
+  animation-duration: 16s;
+  opacity: 0.2;
+}
+
+.bubble--2 {
+  width: 15px;
+  height: 15px;
+  left: 40%;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  opacity: 0.1;
+}
+
+.bubble--3 {
+  width: 10px;
+  height: 10px;
+  left: 30%;
+  animation-delay: 5s;
+  animation-duration: 20s;
+  opacity: 0.3;
+}
+
+.bubble--4 {
+  width: 25px;
+  height: 25px;
+  left: 40%;
+  animation-delay: 8s;
+  animation-duration: 17s;
+  opacity: 0.2;
+}
+
+.bubble--5 {
+  width: 30px;
+  height: 30px;
+  left: 60%;
+  animation-delay: 10s;
+  animation-duration: 15s;
+  opacity: 0.1;
+}
+
+.bubble--6 {
+  width: 10px;
+  height: 10px;
+  left: 80%;
+  animation-delay: 3s;
+  animation-duration: 30s;
+  opacity: 0.4;
+}
+
+.bubble--7 {
+  width: 15px;
+  height: 15px;
+  left: 90%;
+  animation-delay: -7s;
+  animation-duration: 25s;
+  opacity: 0.3;
+}
+
+.bubble--9 {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  bottom: 30px;
+  animation-delay: -5s;
+  animation-duration: 19s;
+  opacity: 0.2;
+}
+
+.bubble--10 {
+  width: 40px;
+  height: 40px;
+  left: 30%;
+  bottom: 30px;
+  animation-delay: -21s;
+  animation-duration: 16s;
+  opacity: 0.3;
+}
+
+.bubble--11 {
+  width: 30px;
+  height: 30px;
+  left: 60%;
+  bottom: 30px;
+  animation-delay: -13.75s;
+  animation-duration: 20s;
+  opacity: 0.3;
+}
+
+.bubble--11 {
+  width: 25px;
+  height: 25px;
+  left: 90%;
+  bottom: 30px;
+  animation-delay: -10.5s;
+  animation-duration: 19s;
+  opacity: 0.3;
+}
+
+@keyframes hueRotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes rotateForm {
+  0% {
+    transform: rotate(360deg);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+  }
+  50% {
+    width: 55px;
+    height: 55px;
+    transform: rotate(0deg);
+
+    border-radius: 50%;
+  }
+  100% {
+    transform: rotate(0deg);
+    width: 600px;
+    height: 45px;
+    border-radius: 0; /* Reset border-radius for the final form */
+  }
+}
+@media screen and (max-width: 800px) {
+  .home {
+    height: 70vh;
+  }
+  .home .content span {
+    font-size: 15px;
+  }
+  .home .content p {
+    font-size: 30px;
+    margin-top: 0;
+  }
+  .home .content .form-group {
+    width: 280px;
+    height: 30px;
+  }
+  .home .content .form-group input {
+    font-size: 10px;
+    padding-left: 27px;
+  }
+  .home .content .form-group input::placeholder {
+    font-size: 11px;
+  }
+  .home .content .form-group .search-submit {
+    font-size: 13px;
+  }
+  .home .content .form-group .search-icon svg {
+    font-size: 20px;
+  }
+
+  @keyframes rotateForm {
+    0% {
+      transform: rotate(360deg);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    50% {
+      width: 55px;
+      height: 55px;
+      transform: rotate(0deg);
+
+      border-radius: 50%;
+    }
+    100% {
+      transform: rotate(0deg);
+      width: 300px;
+      height: 30px;
+      border-radius: 0; /* Reset border-radius for the final form */
+    }
+  }
+}

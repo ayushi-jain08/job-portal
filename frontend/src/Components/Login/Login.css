@@ -1,0 +1,118 @@
+.login {
+  max-width: 1000px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 100px;
+  gap: 15px;
+}
+.login-content h2 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 35px;
+  color: rgb(14, 14, 72);
+  font-weight: 700;
+}
+.login-content .detail {
+  margin-top: 8px;
+}
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 350px;
+  margin: 0px auto;
+  outline-color: #e8e8e8;
+  border-radius: 10px;
+  background: rgb(238, 238, 238);
+  box-shadow: 10px 10px 10px -1px rgb(10, 99, 169, 0.16),
+    -10px -10px 10px -1px rgb(255, 255, 255, 0.3);
+  height: fit-content;
+  padding: 15px;
+  border: 1px solid rgb(223, 222, 222);
+}
+
+.login .form-group {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 10px 10px 10px -1px rgb(10, 99, 169, 0.16),
+    -10px -10px 10px -1px rgb(255, 255, 255, 0.3);
+  transition: 0.3s;
+  width: 270px;
+}
+.login .form-group:hover {
+  outline-color: #e8e8e8;
+  background: #edf2f6;
+  box-shadow: inset 10px 10px 10px -1px rgb(10, 99, 169, 0.16),
+    inset -10px -10px 10px -1px rgb(255, 255, 255, 0.7);
+}
+.login .form-group input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 5px;
+  color: black;
+}
+.login .form-group input::placeholder {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(178, 176, 176);
+}
+.login .profile {
+  width: 130px;
+  height: 130px;
+  background: #edf2f6;
+  box-shadow: inset 10px 10px 10px -1px rgb(10, 99, 169, 0.16),
+    inset -10px -10px 10px -1px rgb(255, 255, 255, 0.7);
+  border-radius: 50%;
+  margin: 5px auto;
+  border: 10px solid white;
+}
+.login .profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.login-btn {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px;
+  width: 100px;
+  background: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  box-shadow: inset 10px 10px 10px -1px rgb(10, 99, 169, 0.16),
+    inset -10px -10px 10px -1px rgb(255, 255, 255, 0.7);
+  display: block;
+  margin: 5px auto;
+}
+.login-btn:active {
+  background: white;
+  box-shadow: 10px 10px 10px -1px rgb(10, 99, 169, 0.16),
+    -10px -10px 10px -1px rgb(255, 255, 255, 0.3);
+}
+.account {
+  text-align: center;
+  margin-top: 10px;
+}
+.account span a {
+  text-decoration: none;
+  color: rgb(16, 16, 104);
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+}

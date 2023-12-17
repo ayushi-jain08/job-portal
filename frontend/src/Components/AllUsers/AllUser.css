@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Pacifico&family=Playfair+Display:wght@500&display=swap");
+
+/* font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'PT Serif', serif; */
+.applicants-all-details {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+.applicants-all-details .applicant-name-email a {
+  display: flex;
+  flex-direction: column;
+}
+.applicants-all-details .avtar {
+  width: 40px;
+  height: 40px;
+}
+.applicants-all-details .applicant-name-email .name {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+  text-transform: capitalize;
+  color: black;
+}
+.applicants-all-details .applicant-name-email span {
+  font-size: 13px;
+  font-family: "Playfair Display", serif;
+  color: black;
+}
+
+/* =======================AllEmployeers======================== */
+.employer-page {
+  background-image: url("../../Images/bulb.png");
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.all-employer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  top: 80px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .all-employer {
+    top: 70px;
+  }
+
+  .applicants-all-details .applicant-name-email .name {
+    font-size: 15px;
+  }
+  .applicants-all-details .avtar {
+    width: 30px;
+    height: 30px;
+  }
+  .applicants-all-details .applicant-name-email span {
+    font-size: 11px;
+  }
+}

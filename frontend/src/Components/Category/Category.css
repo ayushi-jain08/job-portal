@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Pacifico&family=Playfair+Display:wght@500&display=swap");
+
+/* font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'PT Serif', serif; */
+.job-categorys {
+  height: 100vh;
+  max-width: 1150px;
+  margin: 10px auto;
+}
+
+.job-categorys .heading {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.job-categorys .heading span {
+  width: 50px;
+  background-color: black;
+  height: 2px;
+}
+.job-categorys .heading h2 {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+}
+.job-categorys .job-category-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  justify-content: center;
+}
+.job-categorys .job-category-card {
+  width: 170px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.job-categorys .job-category-card .category-card-img {
+  width: 140px;
+  height: 130px;
+  object-fit: cover;
+}
+.job-categorys .job-category-card span {
+  font-family: "Playfair Display", serif;
+  font-size: 19px;
+  color: rgb(100, 99, 99);
+  text-transform: uppercase;
+}
+/* =======================SELECT JOB CATEGORY PRODUCT========================= */
+.subcategory-job-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  position: relative;
+  top: 80px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 240px 900px;
+}
+.subcategory-job-container .left-side-jobs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.subcategory-job-container .left-side-jobs .filter-card {
+  width: 235px;
+  padding: 10px;
+}
+.subcategory-job-container .left-side-jobs .filter-card .heading {
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "PT Serif", serif;
+  margin-bottom: 5px;
+}
+.subcategory-job-container .left-side-jobs .type-of-emp {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 7px;
+  margin-top: 10px;
+}
+.subcategory-job-container .left-side-jobs .filter-card .radio-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: "PT Serif", serif;
+  font-size: 14px;
+  color: rgb(97, 97, 97);
+}
+.subcategory-job-container .right-side-job {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .job-categorys {
+    max-width: 99%;
+  }
+  .job-categorys .heading span {
+    width: 35px;
+  }
+  .job-categorys .heading h2 {
+    font-size: 25px;
+  }
+  .job-categorys .job-category-container {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .job-categorys .job-category-card {
+    width: 32%;
+    gap: 5px;
+  }
+  .job-categorys .job-category-card .category-card-img {
+    width: 97%;
+  }
+  .job-categorys .job-category-card span {
+    font-size: 15px;
+  }
+  /* =======================SELECT JOB CATEGORY PRODUCT========================= */
+  .subcategory-job-container .right-side-job {
+    padding: 0;
+  }
+  .subcategory-job-container {
+    max-width: 99%;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+  .subcategory-job-container .left-side-jobs {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+  .subcategory-job-container .left-side-jobs .filter-card {
+    width: 48%;
+    padding: 8px 5px;
+  }
+  .subcategory-job-container .left-side-jobs .filter-card .heading {
+    font-size: 14px;
+  }
+  .subcategory-job-container .left-side-jobs .filter-card .radio-label {
+    font-size: 12px;
+  }
+}

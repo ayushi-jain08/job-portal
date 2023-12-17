@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Pacifico&family=Playfair+Display:wght@500&display=swap");
+
+/* font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'PT Serif', serif; */
+.single-job-detail-container {
+  position: relative;
+  top: 100px;
+  max-width: 1150px;
+  margin: 0 auto;
+  z-index: 99;
+}
+.single-job-detail-container .single-job-card {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.svg-background {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Ensure the SVG is behind other content */
+}
+.single-job-detail-container .single-job-card .title {
+  font-family: "Playfair Display", serif;
+  font-size: 23px;
+  color: rgb(237, 177, 25);
+}
+.single-job-detail-container .single-job-card .content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 5px;
+}
+.single-job-detail-container .single-job-card .content p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "PT Serif", serif;
+  font-size: 17px;
+  word-spacing: 2px;
+  font-weight: 600;
+}
+.single-job-detail-container .single-job-card .content p svg {
+  color: rgb(67, 65, 65);
+  font-size: 22px;
+}
+.single-job-detail-container .single-job-card .posted-detail {
+  background: rgb(255, 255, 255);
+  margin-top: 15px;
+  padding: 0 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+.single-job-detail-container .single-job-card .posted-detail p {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  color: rgb(88, 88, 88);
+}
+.single-job-detail-container .single-job-card .job-description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.single-job-detail-container .single-job-card .job-description h3 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+.single-job-detail-container .single-job-card .job-description p {
+  font-family: "PT Serif", serif;
+  font-size: 15px;
+  color: rgb(85, 83, 83);
+}
+.single-job-detail-container .single-job-card .requirement h3 {
+  margin-top: 5px;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: rgb(200, 149, 19);
+}
+.single-job-detail-container .single-job-card .requirement p {
+  font-family: "PT Serif", serif;
+  font-size: 15px;
+  margin-top: 10px;
+  color: rgb(85, 83, 83);
+}
+.single-job-detail-container .single-job-card .requirement p li {
+  padding: 5px 0;
+}
+.single-job-detail-container .single-job-card .posted-user {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: space-between;
+  gap: 5px;
+  background-color: rgb(255, 255, 255);
+  height: 45px;
+  margin-top: 13px;
+}
+.single-job-detail-container .single-job-card .posted-user .sub-user-details {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.single-job-detail-container .single-job-card .posted-user h2 {
+  font-size: 15px;
+  font-family: "PT Serif", serif;
+  text-transform: capitalize;
+  color: black;
+}
+.single-job-detail-container .single-job-card .posted-user p {
+  font-size: 13px;
+  font-family: "Playfair Display", serif;
+  color: black;
+}
+.single-job-detail-container .single-job-card .apply-btn {
+  background-color: rgb(98, 98, 241);
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  font-family: "PT Serif", serif;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+.single-job-detail-container .single-job-card .disabled-btn {
+  margin-top: 15px;
+  padding: 8px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  font-family: "PT Serif", serif;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: fit-content;
+  background-color: rgb(196, 194, 194);
+  color: rgb(255, 255, 255);
+}
+.single-job-detail-container .single-job-card .apply-btn:active {
+  transform: scale(1.1);
+}
+.single-job-detail-container .all-applicant {
+  margin-top: 15px;
+}
+.single-job-detail-container .all-applicant h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+}
+.application-modal {
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.application-modal h1 {
+  font-size: 20px;
+  font-family: "PT Serif", serif;
+}
+.application-modal span {
+  font-size: 17px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+}
+.application-modal p {
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.application-modal textarea {
+  resize: none;
+  width: 99%;
+  border: 1.5px solid rgb(231, 231, 231);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  min-height: 150px;
+}
+.application-modal textarea:focus {
+  outline: none;
+  border: 1.5px solid rgb(194, 194, 252);
+}
+.application-modal button {
+  border: none;
+  outline: none;
+  background-color: rgb(98, 98, 241);
+  color: white;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  width: 99%;
+  font-family: serif;
+  font-size: 20px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+.application-modal button:active {
+  border: 1px solid black;
+  color: black;
+  background-color: transparent;
+}
+.single-job-detail-container .group-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+.single-job-detail-container .group-btn .delete-btn {
+  width: 120px;
+  padding: 8px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #d80101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Playfair Display", serif;
+  color: white;
+  border-radius: 5px;
+  gap: 2px;
+}
+.single-job-detail-container .group-btn .delete-btn:active {
+  background-color: #ab0505;
+  transform: scale(0.978);
+}
+.single-job-detail-container .group-btn .edit-btn {
+  width: 120px;
+  padding: 8px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(0, 135, 0);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  font-family: "Playfair Display", serif;
+  outline: none;
+}
+.single-job-detail-container .group-btn .edit-btn:active {
+  background-color: rgb(0, 115, 0);
+  transform: scale(0.978);
+}
+.box {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  transform: translate("-50% , -50%");
+  width: 30%;
+  box-shadow: 0px 5px 5px 5px gray;
+  background-color: white;
+  border-radius: 5px;
+}
+@media screen and (max-width: 900px) {
+  .box {
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    transform: translate("-50% , -50%");
+    width: 95%;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .single-job-detail-container {
+    max-width: 99%;
+
+    top: 80px;
+  }
+  .single-job-detail-container .single-job-card {
+    padding: 10px 3px;
+  }
+  .single-job-detail-container .single-job-card .content p {
+    font-size: 15px;
+  }
+  .single-job-detail-container .single-job-card .content p svg {
+    font-size: 20px;
+  }
+  .single-job-detail-container .single-job-card .posted-detail {
+    padding: 0 5px;
+  }
+  .single-job-detail-container .single-job-card .posted-detail p {
+    font-size: 14px;
+  }
+  .single-job-detail-container .single-job-card .job-description h3 {
+    font-size: 19px;
+  }
+  .single-job-detail-container .single-job-card .job-description p {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .single-job-detail-container .single-job-card .requirement h3 {
+    font-size: 14px;
+  }
+  .single-job-detail-container .single-job-card .requirement p {
+    font-size: 13px;
+  }
+  .single-job-detail-container .single-job-card .posted-user {
+    padding: 0 5px;
+  }
+  .single-job-detail-container .single-job-card .posted-user h2 {
+    font-size: 13px;
+  }
+  .single-job-detail-container .single-job-card .posted-user p {
+    font-size: 12px;
+  }
+  .single-job-detail-container .single-job-card .apply-btn {
+    padding: 5px;
+    font-size: 13px;
+  }
+  .single-job-detail-container .single-job-card .disabled-btn {
+    padding: 5px 5px;
+    font-size: 12px;
+  }
+  .single-job-detail-container .all-applicant h2 {
+    font-size: 18px;
+  }
+  .single-job-detail-container .group-btn {
+    gap: 10px;
+  }
+  .single-job-detail-container .group-btn .delete-btn {
+    width: 100px;
+    padding: 5px 5px;
+    font-size: 16px;
+  }
+  .single-job-detail-container .group-btn .edit-btn {
+    width: 100px;
+    padding: 5px 5px;
+    font-size: 16px;
+  }
+}

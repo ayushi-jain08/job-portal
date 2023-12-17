@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Pacifico&family=Playfair+Display:wght@500&display=swap");
+
+/* font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'PT Serif', serif; */
+.all-jobs-container {
+  max-width: 1150px;
+  margin: 20px auto;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 240px 900px;
+}
+.all-jobs-container .filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.all-jobs-container .filters .filter-card {
+  width: 235px;
+  padding: 10px;
+}
+.all-jobs-container .heading {
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "PT Serif", serif;
+  margin-bottom: 5px;
+}
+.all-jobs-container .type-of-emp {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 7px;
+  margin-top: 10px;
+}
+.all-jobs-container .type-of-emp .radio-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: "PT Serif", serif;
+  font-size: 14px;
+  color: rgb(97, 97, 97);
+}
+.all-jobs-container .right-side-job {
+  display: flex;
+  flex-direction: column;
+}
+/* =======================JOB CARD========================== */
+.job-card {
+  max-width: 95%;
+  width: 100%;
+  margin: 10px auto;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.job-card .job-card-flex {
+  display: flex;
+  gap: 15px;
+}
+.job-card .save-job {
+  float: right;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transition: all 0.3s ease-in;
+}
+.job-card .save-job:active {
+  transform: scale(1.2);
+}
+.job-card .job-icon {
+  min-width: 70px;
+  height: 60px;
+  border: 1px solid rgb(218, 218, 218);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.job-card .job-icon svg {
+  font-size: 50px;
+  color: rgb(199, 199, 199);
+  color: rgb(22, 22, 87);
+}
+.job-card .details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.job-card .details .co-name {
+  font-family: "Playfair Display", serif;
+  color: rgb(61, 59, 59);
+  font-size: 18px;
+}
+.job-card .details .title {
+  font-family: "PT Serif", serif;
+  font-size: 22px;
+  color: rgb(44, 43, 43);
+  margin-top: 0;
+}
+.job-card .details .sub-details {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+.job-card .details .sub-details p {
+  color: rgb(136, 134, 134);
+  font-family: "PT Serif", serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.job-card .details .sub-details p svg {
+  font-size: 15px;
+}
+.job-card .details .desc {
+  font-family: "PT Serif", serif;
+  color: rgb(115, 113, 113);
+  font-size: 15px;
+  line-height: 22px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@media screen and (max-width: 1200px) {
+  .all-jobs-container {
+    max-width: 99%;
+    display: flex;
+    margin: 10px auto;
+    flex-direction: column;
+  }
+  .all-jobs-container .filters {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+  .all-jobs-container .filters .filter-card {
+    width: 48%;
+    padding: 8px 5px;
+  }
+  .all-jobs-container .heading {
+    font-size: 14px;
+  }
+  .all-jobs-container .type-of-emp .radio-label {
+    font-size: 12px;
+  }
+  /* =======================JOB CARD========================== */
+  .job-card {
+    width: 100%;
+    padding: 15px 5px;
+  }
+  .job-card .job-card-flex {
+    gap: 8px;
+  }
+  .job-card .job-icon {
+    min-width: 50px;
+    height: 50px;
+  }
+  .job-card .job-icon svg {
+    font-size: 40px;
+  }
+  .job-card .details .co-name {
+    font-size: 15px;
+  }
+  .job-card .details .title {
+    font-size: 17px;
+  }
+  .job-card .details .sub-details {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  .job-card .details .sub-details p {
+    font-size: 13px;
+  }
+  .job-card .details .sub-details p svg {
+    font-size: 14px;
+  }
+  .job-card .details .desc {
+    margin-top: 3px;
+    font-size: 13px;
+  }
+}

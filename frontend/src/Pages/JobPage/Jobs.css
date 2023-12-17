@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Pacifico&family=Playfair+Display:wght@500&display=swap");
+
+/* font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'PT Serif', serif; */
+.job-page {
+  position: relative;
+  top: 65px;
+  background-image: url("../../Images//search3-removebg-preview.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+}
+.svg-background {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Ensure the SVG is behind other content */
+}
+.job-page .top-job-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.job-page .top-job-page > div {
+  width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: white;
+  border: 2px solid rgb(218, 217, 217);
+  padding: 5px;
+}
+.job-page .top-job-page > div span {
+  color: blue;
+  font-size: 24px;
+  font-family: "PT Serif", serif;
+  font-weight: 600;
+}
+.job-page .top-job-page > div p {
+  font-size: 25px;
+  font-family: "PT Serif", serif;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: rgb(95, 95, 95);
+}
+.job-page .bottom-job-page {
+  display: flex;
+  flex-direction: column;
+  max-width: 1150px;
+  margin: 30px auto;
+}
+.job-page .bottom-job-page h6 {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+}

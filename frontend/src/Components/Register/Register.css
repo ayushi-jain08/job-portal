@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Pacifico&family=Playfair+Display:wght@500&display=swap");
+
+/* font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'PT Serif', serif; */
+.register {
+  max-width: 1000px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 100px;
+  gap: 15px;
+}
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 650px;
+  margin: 0px auto;
+  background-color: white;
+  /* border: 2px solid rgb(189, 188, 188); */
+  border-radius: 10px;
+  padding: 15px;
+}
+.register-container .register-content {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.register-content .profile img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+.register-content .detail {
+  width: 320px;
+}
+.register-content .detail .register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.register-content .detail .register-form .form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  border: none;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0 7px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgb(235, 235, 235);
+}
+.register-content .detail .register-form .form-group input {
+  width: 98%;
+  border: none;
+  outline: none;
+  background-color: rgb(235, 235, 235);
+  padding: 5px 7px;
+  color: black;
+  height: 100%;
+}
+
+.register-content .detail .register-form .form-group svg {
+  color: rgb(3, 3, 49);
+}
+.register-content .detail .register-form .form-group input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(123, 121, 121);
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1px;
+}
+.register-content .detail .register-form .form-group label {
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.register-content .detail .register-form .form-group select {
+  font-family: "PT Serif", serif;
+  font-size: 16px;
+  padding: 0 10px;
+
+  width: 50%;
+  margin-left: 3px;
+}
+.register-content .detail .register-form .register-btn {
+  background-color: rgb(9, 9, 56);
+  color: white;
+  border: none;
+  width: 90%;
+  outline: none;
+  padding: 7px;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in;
+}
+.register-content .detail .register-form .register-btn:active {
+  background-color: rgb(104, 104, 104);
+  transform: scale(1.1);
+}
